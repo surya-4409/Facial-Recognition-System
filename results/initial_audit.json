@@ -1,0 +1,102 @@
+{
+  "overall": {
+    "far": 0.54,
+    "frr": 0.4576
+  },
+  "Female_0-19_Light": {
+    "far": 0.5,
+    "frr": 0.5122
+  },
+  "Female_0-19_Medium": {
+    "far": 0.6,
+    "frr": 0.5238
+  },
+  "Female_20-39_Light": {
+    "far": 0.24,
+    "frr": 0.6667
+  },
+  "Female_20-39_Medium": {
+    "far": 0.66,
+    "frr": 0.4048
+  },
+  "Female_40-59_Light": {
+    "far": 0.55,
+    "frr": 0.4333
+  },
+  "Female_40-59_Medium": {
+    "far": 0.59,
+    "frr": 0.5
+  },
+  "Female_60+_Light": {
+    "far": 0.62,
+    "frr": 0.3478
+  },
+  "Female_60+_Medium": {
+    "far": 0.7,
+    "frr": 0.4167
+  },
+  "Male_0-19_Light": {
+    "far": 0.53,
+    "frr": 0.5417
+  },
+  "Male_0-19_Medium": {
+    "far": 0.58,
+    "frr": 0.5417
+  },
+  "Male_20-39_Dark": {
+    "far": 0.61,
+    "frr": 0.3333
+  },
+  "Male_20-39_Light": {
+    "far": 0.47,
+    "frr": 0.2778
+  },
+  "Male_20-39_Medium": {
+    "far": 0.46,
+    "frr": 0.5
+  },
+  "Male_40-59_Light": {
+    "far": 0.6,
+    "frr": 0.2333
+  },
+  "Male_40-59_Medium": {
+    "far": 0.42,
+    "frr": 0.4444
+  },
+  "Male_60+_Dark": {
+    "far": 0.54,
+    "frr": 0.4576
+  },
+  "Male_60+_Light": {
+    "far": 0.51,
+    "frr": 0.7222
+  },
+  "Male_60+_Medium": {
+    "far": 0.54,
+    "frr": 0.4576
+  },
+  "Male_0-19_Dark": {
+    "far": 0.5402,
+    "frr": 0.4579
+  },
+  "Male_40-59_Dark": {
+    "far": 0.542,
+    "frr": 0.4605
+  },
+  "Female_0-19_Dark": {
+    "far": 0.5404,
+    "frr": 0.4581
+  },
+  "Female_20-39_Dark": {
+    "far": 0.5542,
+    "frr": 0.4788
+  },
+  "Female_40-59_Dark": {
+    "far": 0.5434,
+    "frr": 0.4628
+  },
+  "Female_60+_Dark": {
+    "far": 0.542,
+    "frr": 0.4607
+  }
+}

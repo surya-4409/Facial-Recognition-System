@@ -1,0 +1,3 @@
+# Placeholder — model.pt will be generated here by the pipeline
+# The actual model file (artifacts/model.pt) is gitignored due to size
+# Run the pipeline to generate it: python main.py

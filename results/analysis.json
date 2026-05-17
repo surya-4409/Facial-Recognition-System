@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "total_subgroups_analyzed": 24,
+    "overall_far": 0.54,
+    "overall_frr": 0.4576,
+    "worst_performing_group": "Male_60+_Light",
+    "worst_frr": 0.7222,
+    "best_performing_group": "Male_40-59_Light",
+    "best_frr": 0.2333,
+    "mean_frr_across_groups": 0.4622,
+    "std_frr_across_groups": 0.1029
+  },
+  "most_biased_pairing": {
+    "group_1": "Male_60+_Light",
+    "group_2": "Male_40-59_Light",
+    "metric": "frr_disparity",
+    "value": 0.4889,
+    "interpretation": "Group 'Male_60+_Light' has a 48.9% higher FRR than 'Male_40-59_Light'. This means the system is 48.9% more likely to incorrectly reject a legitimate match for individuals in group 'Male_60+_Light', potentially causing disproportionate access denial."
+  },
+  "hypothesized_causes": {
+    "data_level": "The training data likely contains fewer images of Male individuals in the 60+ age range with Light skin tone. FairFace, while balanced at the race level, may still exhibit within-group imbalances (e.g., fewer elderly or very young subjects). Underrepresentation leads to poorer feature generalization, causing higher FRR for this cohort. Image quality factors (lighting, pose variation) may also disproportionately affect Light-skinned individuals due to camera sensor biases.",
+    "model_level": "The InceptionResnetV1 backbone was pretrained on VGGFace2, which, despite its scale (3.3M images), inherits demographic imbalances from internet-sourced data (skewed toward younger, lighter-skinned individuals). The learned feature space may encode texture and lighting patterns that generalize poorly to Light skin tones or 60+-aged faces. The model may implicitly learn age-correlated features (e.g., wrinkle patterns) that do not provide stable identity signals across pose and lighting variation."
+  },
+  "regulatory_implications": "Under EU AI Act provisions for high-risk biometric systems, a FRR disparity exceeding 5% between demographic groups would require documented mitigation measures before deployment. NYC Local Law 144 would mandate bias audits for employment-related applications. The identified disparity necessitates mitigation before deployment in any high-stakes context."
+}

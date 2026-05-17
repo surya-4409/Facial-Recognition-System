@@ -1,0 +1,39 @@
+services:
+  facial-audit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: facial_verification_audit
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - QUICK_MODE=${QUICK_MODE:-true}
+      - EPOCHS=${EPOCHS:-3}
+      - BATCH_SIZE=${BATCH_SIZE:-32}
+      - CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    volumes:
+      # Persist downloaded data between runs
+      - ./data:/app/data
+      # Persist trained model artifacts
+      - ./artifacts:/app/artifacts
+      # Persist audit results
+      - ./results:/app/results
+      # Persist submission files
+      - ./submission:/app/submission
+    healthcheck:
+      test: ["CMD", "python", "-c", "import torch; import facenet_pytorch; import cv2; import pandas; print('Health OK')"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 120s
+    restart: "no"
+    # Resource limits (adjust based on your machine)
+    # For GPU support, uncomment and configure:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]

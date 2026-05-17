@@ -1,0 +1,47 @@
+{
+  "initial_model": {
+    "accuracy": 0.4984,
+    "threshold": 0.9826,
+    "overall_far": 0.54,
+    "overall_frr": 0.4576,
+    "frr_disparity_across_groups": 0.4889
+  },
+  "mitigated_model": {
+    "accuracy": 0.502,
+    "threshold": 0.9819,
+    "overall_far": 0.54,
+    "overall_frr": 0.4576,
+    "frr_disparity_across_groups": 0.5918,
+    "mitigation_strategy": "post_processing_threshold_calibration",
+    "group_thresholds": {
+      "Female_0-19_Medium": 0.9801,
+      "Female_40-59_Light": 0.9826,
+      "Male_40-59_Medium": 0.9807,
+      "Female_20-39_Medium": 0.9804,
+      "Female_20-39_Dark": 0.9826107025146484,
+      "Male_20-39_Light": 0.9826,
+      "Male_20-39_Medium": 0.9826,
+      "Male_60+_Medium": 0.9821,
+      "Female_20-39_Light": 0.982,
+      "Female_40-59_Medium": 0.9811,
+      "Male_40-59_Light": 0.9813,
+      "Male_0-19_Medium": 0.9809,
+      "Female_60+_Medium": 0.9826107025146484,
+      "Male_0-19_Light": 0.9826,
+      "Female_60+_Light": 0.9777,
+      "Male_60+_Dark": 0.9826107025146484,
+      "Female_0-19_Light": 0.9826,
+      "Male_0-19_Dark": 0.9826107025146484,
+      "Male_20-39_Dark": 0.9826107025146484,
+      "Male_40-59_Dark": 0.9826107025146484,
+      "Male_60+_Light": 0.9826107025146484,
+      "Female_0-19_Dark": 0.9826107025146484,
+      "Female_40-59_Dark": 0.9826107025146484,
+      "Female_60+_Dark": 0.9826107025146484
+    }
+  },
+  "fairness_improvement": {
+    "frr_disparity_reduction": -0.1029,
+    "accuracy_change": 0.0036
+  }
+}
