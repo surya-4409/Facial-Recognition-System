@@ -63,7 +63,7 @@ The work is motivated by real-world regulatory requirements (EU AI Act, NYC Loca
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/surya-4409/Facial-Recognition-System.git
 cd facial-recognition-system
 
 # Copy and configure environment
