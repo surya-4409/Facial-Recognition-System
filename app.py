@@ -18,7 +18,7 @@ with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/3135/3135715.png", width=100) # Placeholder avatar
     st.header("Author Details")
     st.markdown("**Name:** BILLAKURTI VENKATA SURYANARAYANA")
-    st.markdown("**Roll Number:** 4409") 
+    st.markdown("**Roll Number:23MH1A4409") 
     st.markdown("---")
     st.markdown("**Project Domain:** Responsible AI & Computer Vision")
     st.markdown("**Tech Stack:** PyTorch, OpenCV, Streamlit, Docker")
