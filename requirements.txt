@@ -30,3 +30,4 @@ tqdm==4.66.1
 
 # Utilities
 requests==2.31.0
+streamlit==1.32.0
